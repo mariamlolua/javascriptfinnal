@@ -1,0 +1,82 @@
+#introDiv{
+    width: 50%;
+    height: 100%;
+    left : 50%;
+    position: relative;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Fuzzy Bubbles', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+ 
+}
+
+#titleOne{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+   
+
+}
+
+#titleTwo{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-weight: 1000;
+    
+}
+
+#ALotAbout{
+    color: #202328;
+    text-align: center;
+  
+}
+
+#LetsGo{
+    width: 150px;
+    height: 40px;
+    background-color:#202328;
+    color: white;
+    border-radius: 15px;
+    font-size: 17px;
+    border: black 1px solid;
+   
+}
+#imageDiv{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-image: url(https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaDFIUVOm9S583EWPNaE3mFxMKvi9h2wUHdmGflAChGIWHYzuX_9rzGgGpA5phWIMrlRiVp_R5fqAKM2OLUDXkxO23Ho=w1366-h619);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    background-color: #FD5234;
+}
+
+div{
+    display: inline-block;
+}
+
+
+#a{
+    position: relative;
+    left: 20px;
+    top: 120px;
+}
+#b{
+    position: relative;
+    left: 20px;
+    top: 120px;
+}
+#c{
+position: relative;
+left: 20px;
+top: 100px;
+
+}
+#d{
+    position: relative;
+    right: 320px;
+    top: 190px;
+}

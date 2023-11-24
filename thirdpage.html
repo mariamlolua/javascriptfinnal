@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/thirdpage.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fuzzy+Bubbles:wght@700&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="imageDiv"></div> 
+
+    <div id="introDiv">
+
+
+
+        <span class="material-symbols-outlined">
+            done_all
+            </span> 
+  
+              <h4>Personal Information</h4>
+               <span class="material-symbols-outlined">
+          looks_two
+          </span>
+   
+          <h4>Chess Experience</h4>
+
+        <form>
+            <label id="lok">Level Of Knowladge</label>
+            <select id="sel1">
+                <option>Beginner </option>
+                <option>Intermediate</option>
+                <option>Professional</option>
+            </select>
+            <label id="cyc">Choose your character</label>
+            <select id="sel2">
+                
+                
+            </select>
+            
+           
+        </form> 
+        <button onclick="document.location='fourthpage.html'" id="next">Done</button>
+            <button onclick="document.location='secondpage.html'" id="back">Back</button>
+  
+       <script>
+
+    fetch('https://reqres.in/api/users?page=2')
+    .then(response => response.json())
+    .then(responseData => 
+        responseData.data.forEach(item => {
+            let select = document.getElementById('sel2');
+            let opt = document.createElement('option');
+            let image = document.createElement("img")
+            opt.textContent =  item.first_name + " " + item.last_name
+            image.src= item.avatar
+
+           
+            select.appendChild(opt);
+            opt.appendChild(image);
+
+        })
+    )
+
+    .catch(error => conolse.log(error))
+    
+       
+
+        
+       </script>
+
+      </div>
+</body>
+</html>

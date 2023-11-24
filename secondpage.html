@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/secondpage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fuzzy+Bubbles:wght@700&family=Open+Sans&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="imageDiv"></div> 
+
+    <div id="introDiv">
+
+
+
+      <div id="A"><span class="material-symbols-outlined">
+            looks_one
+            </span></div>  
+
+            <div id="b"><h4>Personal Information</h4></div>
+             <div id="c"><span class="material-symbols-outlined">
+        looks_two
+        </span></div>
+ 
+        <div id="d"><h4>Chess Experience</h4></div>
+
+        <div id="e">
+        <h1>Personal Information </h1></div>
+
+        <form id="registration">
+        <div id="f"> <input name="name"  type="text" placeholder="Name">
+            <div id="error_username" class="error"></div></div>
+
+         <div id="g"><input name="Email"   type="text" placeholder="Email Address">
+            <div id="error_email" class="error"></div></div> 
+
+        <div id="h"><input name="number"  type="text"  placeholder="Phone Number"></div> 
+        <div id="error_number" class="error"></div>   
+         <div id="i"> <input name="birth" type="date" placeholder="Date of birth">
+            <div id="error_age" class="error"></div></div> 
+
+          <div id="j"  type="submit"><button id="next" onclick="document.location='thirdpage.html'">Next <span class="material-symbols-outlined">
+            expand_circle_right
+            </span></button></div>  
+       </form>
+     <div id="k"><button id="back" onclick="document.location='firstpage.html'">Back </button></div>  
+     
+    </div>
+    <script>
+         let registrationForm = document.getElementById('registration');
+ 
+ registrationForm.addEventListener('submit',function(e){
+     e.preventDefault(); 
+
+     let form = e.target;
+     let errors = {}; 
+     let name = document.querySelector('[name = "name"]').value; 
+     if(name.length < 0){ 
+         errors.name = "please, write your name"; 
+     }
+     let email = document.querySelector('[name = "email"]').value;
+            if(!/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)){
+                errors.email = "Invalid Email"
+            }     
+
+            let number = document.querySelector('[name = "number"]').value;
+            if(/^[0-9][A-Za-z0-9 -]*$/.test(number) && number.length < 9){
+                errors.number = "Invalid Number"
+            }     
+        
+        })
+    
+        let nextbutton = document.getElementById('j')
+        if(name.value == 0 && email.value == 0 && Number.value == 0 && document.getElementById('i').value == 0){
+            
+        }
+        if(!errors){
+            let nextbtn = document.getElementById("next").addEventListener('click', function(){
+                nextbtn.setAttribute("onlick","document.location='thirdpage.html" )
+            })
+        }
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>

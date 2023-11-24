@@ -1,0 +1,17 @@
+img{
+    width : 150px;
+    height : 150px
+}
+body{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+button{
+    width : 150px;
+    height : 50px;
+    background-color: #58B4E0;
+    color : white;
+    font-size: larger;
+    border : none;
+    border-radius: 6px;
+}

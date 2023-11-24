@@ -1,0 +1,107 @@
+#introDiv{
+    width: 50%;
+    height: 100%;
+    left : 50%;
+    position: relative;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Fuzzy Bubbles', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+ 
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#imageDiv{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-image: url(https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaBd4RMse320UV7TUxwUKSNPCyGLBOukx-VweheyB4sCgnPhVlJIFGEt4LLygT4SBmbUcn6p2O58mqvZHHzblgLTLJlfvQ=w1366-h619);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#A{
+    position: relative;
+    left: 50px;
+}
+#b{
+    position: relative;
+    top: 50px;
+}
+#c{
+    position: relative;
+    left: 50px;
+}
+
+#d{
+    position: relative;
+    top: 50px; 
+}
+
+#e{
+position: relative;
+top: 80px;
+left: 30px;
+}
+
+#f{
+position: relative;
+top: 120px; 
+left: 50px;
+}
+#g{
+    position: relative;
+    top: 160px; 
+    left: 50px;
+}
+#h{
+    position: relative;
+    top: 200px; 
+    left: 50px;
+}
+
+#i{
+    position: relative;
+    top: 230px; 
+    left: 50px;
+}
+#j{
+    position: relative;
+    top: 300px; 
+    left: 100px;
+}
+#k{
+    position: relative;
+    top: 260px; 
+    left: 40px;
+}
+
+div{
+    display: inline-block;
+}
+
+input{
+    width:400px;
+    height : 40px;
+    border-radius: 4px;
+    border:1px solid grey
+}
+#back{
+    background-color: white;
+    border: 1px solid grey;
+    height : 40px;
+    width : 90px;
+    font-size: larger;
+    border-radius: 4px;
+}
+#next{
+    background-color:#202328;
+    border: 1px solid grey;
+    height : 40px;
+    width : 90px;
+    font-size: larger;
+    border-radius: 4px;
+    color:white
+}
